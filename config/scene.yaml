@@ -1,0 +1,35 @@
+scene:
+  table_height: 0.05
+  home_joints: [0.0, -1.5707, 1.5707, -1.5707, -1.5707, 0.0]
+  
+  # ĐẨY 3 KHỐI RA XA THÊM 8CM VÀ NỚI RỘNG KHOẢNG CÁCH
+  objects:
+    red_cube:
+      x: 0.33
+      y: -0.22
+      z: 0.075
+    yellow_cube:
+      x: 0.36
+      y: 0.00
+      z: 0.075
+    blue_cube:
+      x: 0.33
+      y: 0.22
+      z: 0.075
+
+  zones:
+    zone_a:
+      x: -0.20
+      y: 0.25
+      z: 0.075
+    zone_b:
+      x: -0.25
+      y: 0.00
+      z: 0.075
+    zone_c:
+      x: -0.20
+      y: -0.25
+      z: 0.075
+
+  z_offset_approach: 0.18
+  z_offset_grasp: 0.055
