@@ -105,5 +105,5 @@ Sau khi chạy Terminal 3, gõ lệnh vào dấu nhắc:
   ```
   *(hoặc: `Arrange all objects according to my student ID`)*
 
-* **Thoát chương trình:** Gõ `exit` hoặc `quit`.
-```
+* **Thoát chương trình:** Gõ `exit` hoặc `Ctrl+C`.
+
