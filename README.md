@@ -1,4 +1,4 @@
-```markdown
+
 # Hướng Dẫn Cài Đặt & Chạy Gói `ur3_llm_control`
 
 Package ROS 2 điều khiển robot UR3 trong mô phỏng Gazebo bằng ngôn ngữ tự nhiên thông qua **9Router (LLM)** và **MoveIt 2**.
