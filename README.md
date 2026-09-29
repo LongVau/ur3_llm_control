@@ -86,10 +86,23 @@ export ROUTER9_BASE_URL="http://$(ip route show | grep -i default | awk '{print 
 # Khởi chạy node điều khiển
 ros2 run ur3_llm_control skill_executor
 ```
+## 6. Cấu hình Hiển thị trên RViz 2
 
----
+Sau khi cửa sổ RViz mở lên, thực hiện các bước sau để hiển thị trực quan môi trường:
 
-## 6. Các câu lệnh Test mẫu
+1. **Cấu hình Fixed Frame (Góc trên bên trái):**
+   * Trong mục **Global Options** $\rightarrow$ dòng **Fixed Frame**: chọn **`world`** (hoặc `base_link`).
+
+2. **Thêm hiển thị 3D Marker (2 Mặt Bàn, 3 Hộp màu & Chữ nổi Zone A, B, C):**
+   * Ở góc dưới bên trái, bấm nút **Add** $\rightarrow$ chọn mục **MarkerArray** $\rightarrow$ bấm **OK**.
+   * Trong danh sách Displays bên trái, mở rộng mục **MarkerArray** vừa thêm:
+     * Tại dòng **Topic**: chọn hoặc gõ vào:
+       ```text
+       /rviz_scene_markers
+       ```
+       * Lưu ý: topic `/rviz_scene_markers` chỉ xuất hiện sau khi đã chạy `skill_executor`
+
+## 7. Các câu lệnh Test mẫu
 
 Sau khi chạy Terminal 3, gõ lệnh vào dấu nhắc:
 
